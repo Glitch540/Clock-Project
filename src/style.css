@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     display: flex;
@@ -9,177 +8,145 @@ body {
     font-family: Arial, sans-serif;
     background-color: #FDF8E1;
     background-blend-mode: soft-light;
-    
-  }
+    max-width: 100vw; 
+    overflow: hidden; 
 
-  .darumadrop-one-regular {
+
+}
+
+.darumadrop-one-regular {
     font-family: "Darumadrop One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
-  }
+}
 
-  .logo {
-    width: 550px;         
-    height: auto;         
-    object-fit: fill;    
+.logo {
+    width: 450px; /* Smaller logo size */
+    height: auto;
+    object-fit: fill;
     position: relative;
-  }
+}
 
-  .container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: #FAFAFC;
-    padding: 40px;
+    padding: 20px; /* Smaller padding */
     border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    width: 90%; /* Adjust container to fit screen */
+    max-width: 1000px; /* Limit maximum container size */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
-  }
-
-  .city {
+.city {
     display: flex;
-    justify-content: space-between; /* Align city, date on left and time on the right */
-    align-items: center; /* Vertically align the city name, date, and time */
-    margin: 20px 0;
-    padding: 30px 0;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin: 10px 0;
+    padding: 20px 0;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
     width: 100%;
-    gap: 240px;
-      
 }
-  
-  .city:last-child {
-    border: none;
-  }
-  
 
-  .details {
+.city:last-child {
+    border: none;
+}
+
+.details {
     display: flex;
-    justify-content: space-between; /* Makes date and time go to opposite sides */
-    align-items: left; /* Aligns them vertically centered */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-  }
-  
-  .date {
-    font-size: 1.2em;
+    margin-right: 550px; /*allows me to create space between the time and text details on the left side :p*/ 
+}
+
+.date {
+    font-size: 1em; /* Smaller font size */
     opacity: 0.6;
     color: #92B4EC;
-    margin-top: 5px; /* Add some spacing below the city name */
+    margin-top: 1px;
     text-shadow: 1px 1px 1px black;
-    }
-  
-    .time {
-    font-size: 48px;
+}
+
+.time {
+    font-size: 2em;
     font-weight: bold;
     color: #92B4EC;
     text-shadow: 1px 1px 1px black;
-    
-    }
-  
-  .time small {
-    font-size: 18px;
+    margin-left: 50px; /* Add space between city name and time */
+
+}
+
+.time small {
+    font-size: 16px; 
     vertical-align: middle;
-    line-height: 36px;
-  }
+    line-height: 24px;
+}
 
-  .logo img {
-    max-width: 60%;    
-    height: auto;       
-    object-fit: contain; 
-  }
+.logo img {
+    max-width: 50%;    
+    height: auto;
+    object-fit: contain;
+}
 
-  select {
+select {
     border-radius: 4px;
-    font-size: 36px; /* Increase the font size */
-    padding: 10px; /* Add padding to make the button bigger */
-    width: 100%; 
+    font-size: 1.5em; 
+    padding: 8px; 
+    width: 100%;
+    max-width: 500px; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border: 3px solid #92B4EC;
     font-family: "Darumadrop One", sans-serif;
     text-align: center;
-    color: #92B4EC; 
-    display: block; 
-    
-  }
-  
-  select:focus {
-    border-color: #4d324a;   /* Change border color to orange when focused */
-    outline: none;              /* Remove the default outline for better styling */
-    
-  }
+    color: #92B4EC;
+}
 
-  h1 {
-    text-align: center; /* Center the text horizontally */
-    margin: 0 auto;     /* Center the h1 within the container */
-    font-size: 5em;  
-    color: #92B4EC;     
+select:focus {
+    border-color: #4d324a;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 100px; 
+    color: #92B4EC;
     text-shadow: 2px 2px 4px black;
     font-family: "Darumadrop One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     font-weight: bold;
     letter-spacing: 5px;
-  }
+}
 
 h2 {
     font-family: "Darumadrop One", sans-serif;
-    margin-right: 600px; /* Add some space between date and time */
-    font-size: 24px;
+    margin-right: 10px; 
+    font-size: 1.5em; 
+    
 }
 
-img {
-     display: inline-block;
-     animation: wave 1.5s infinite;
-  }
-  
 
-  @keyframes wave {
+img {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
-  }
+}
 
-.cityOne {
-    color: #4d324a; 
-    border-bottom: 1px dashed grey;
-    align-items: left;
-    
-  }
-
-.cityTwo {
-    color: #4d324a; 
-    border-bottom: 1px dashed grey;
-    align-items: left;
-  }
-
-.cityThree {
-    color: #4d324a; 
-    border-bottom: 1px dashed grey;
-    align-items: left;
-  }
-
-.cityFour {
+.cityOne, .cityTwo, .cityThree, .cityFour, .cityFive, .citySix {
     color: #4d324a;
     border-bottom: 1px dashed grey;
-    align-items: left;
-  }
+    text-align: left;
+}
 
-.cityFive {
-    align-items: left;
-    border-bottom: 1px dashed grey;
-    color: #4d324a;
-  }
-
-.citySix {
-    align-items: left;
-    color: #4d324a;
-    border-bottom: 1px dashed grey;
-  }
-
-  footer {
+footer {
     text-align: center;
-    font-size: 18px;
-    margin-top: -35px;
-    color: #92B4EC; 
-  }
+    font-size: 14px; /* Smaller font size */
+    margin-top: 20px;
+    color: #92B4EC;
+}
