@@ -138,15 +138,25 @@ img {
     50% { transform: translateY(-10px); }
 }
 
-.cityOne, .cityTwo, .cityThree, .cityFour, .cityFive, .citySix {
+.city {
     color: #4d324a;
     border-bottom: 1px dashed grey;
     text-align: left;
 }
 
+
+.all {
+    text-align: left;
+    display: block;
+}
+
+
+
+
+
 footer {
     text-align: center;
     font-size: 14px; /* Smaller font size */
-    margin-top: 20px;
+    margin-top: 70px;
     color: #92B4EC;
 }
