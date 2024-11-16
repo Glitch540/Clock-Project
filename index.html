@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,70 +25,55 @@
       </div>
       <br>
    
-      <select>
+      <select id="city">
         <option value="">Select..</option>
         <option value="">Mexico</option>
         <option value="">China</option>
         <option value="">Japan</option>
         <option value="">Spain</option>
-        <option value="">United Kingdom</option>
-        <option value="">Taiwan</option>
       </select>
 
       <br><br>
 
-      <div class="cityOne">
-        <h2>Isla Mujeres<sup>&#x1f1f2;&#x1f1fd;</sup></h2>
-        <div class="details">
-            <div class="date">August 15th 2022</div>
-            <div class="time">1:48:15<small><sup>AM</sup></small></div>
-        </div>
+      <div id="cities">
+      <div class="city" id="mexico-city">
+          <h2>Mexico City<sup>&#x1f1f2;&#x1f1fd;</sup></h2>
+          <div class="details">
+            <div class="date"></div>
+            <div class="time"></div>
       </div>
+    </div>
+      
 
-      <div class="cityTwo">
+      <div class="city" id="shanghai">
         <h2>Shanghai<sup>&#127464;&#127475;</sup></h2>
         <div class="details">
-            <div class="date">August 15th 2022</div>
-            <div class="time">1:48:15<small><sup>AM</sup></small></div>
+            <div class="date"></div>
+            <div class="time"></div>
         </div>
       </div>
       
-      <div class="cityThree">
+      <div class="city" id="kyoto">
         <h2>Kyoto<sup>&#127471;&#127477;</sup></h2>
         <div class="details">
-            <div class="date">August 15th 2022</div>
-            <div class="time">1:48:15<small><sup>AM</sup></small></div>
+            <div class="date"></div>
+            <div class="time"></div>
         </div>
       </div>
       
-      <div class="cityFour">
+      <div class="city" id="seville">
         <h2>Seville<sup>&#127466;&#127480;</sup></h2>
         <div class="details">
-          <div class="date">August 15th 2022</div>
-          <div class="time">1:48:15<small><sup>AM</sup></small></div>
+          <div class="date"></div>
+          <div class="time"></div>
         </div>
       </div>
-      
-      <div class="cityFive">
-        <h2>London<sup>&#127468;&#127463;</sup></h2>
-        <div class="details">
-          <div class="date">August 15th 2022</div>
-          <div class="time">1:48:15<small><sup>AM</sup></small></div>
-        </div>
-      </div>
-      
-      <div class="citySix">
-        <h2>Taipei City<sup>&#127481;&#127484;</sup></h2>
-        <div class="details">
-          <div class="date">August 15th 2022</div>
-          <div class="time">1:48:15<small><sup>AM</sup></small></div>
-        </div>
     </div>
 
     <footer>
       This project was coded by Crystal Gomez and is
       <a href="https://github.com" target="_blank">open sourced on GitHub</a>
     </footer>
-
+    <script src="src/index.js"></script>
   </body>
 </html>
