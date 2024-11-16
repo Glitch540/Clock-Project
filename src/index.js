@@ -8,7 +8,7 @@
     let mexicoCityTime = moment().tz("Mexico/General");
 
     mexicoCityDateElement.innerHTML = mexicoCityTime.format("MMMM Do YYYY");
-    mexicoCityTimeElement.innerHTML = mexicoCityTime.format("h:mm:ss ss [<small>]A[</small>]");
+    mexicoCityTimeElement.innerHTML = mexicoCityTime.format("h:mm:ss [<small>]A[</small>]");
  
 }
 
@@ -20,7 +20,7 @@
  let shanghaiTime = moment().tz("Asia/Shanghai");
 
  shanghaiDateElement.innerHTML = shanghaiTime.format("MMMM Do YYYY");
- shanghaiTimeElement.innerHTML = shanghaiTime.format("h:mm:ss ss [<small>]A[</small>]");
+ shanghaiTimeElement.innerHTML = shanghaiTime.format("h:mm:ss [<small>]A[</small>]");
 
 }
  // kyoto
@@ -31,7 +31,7 @@
  let kyotoTime = moment().tz("Asia/Tokyo");
 
  kyotoDateElement.innerHTML = kyotoTime.format("MMMM Do YYYY");
- kyotoTimeElement.innerHTML = kyotoTime.format("h:mm:ss ss [<small>]A[</small>]");
+ kyotoTimeElement.innerHTML = kyotoTime.format("h:mm:ss [<small>]A[</small>]");
 
 }
  // seville
@@ -42,7 +42,7 @@
  let sevilleTime = moment().tz("Europe/Madrid");
 
  sevilleDateElement.innerHTML = sevilleTime.format("MMMM Do YYYY");
- sevilleTimeElement.innerHTML = sevilleTime.format("h:mm:ss ss [<small>]A[</small>]");
+ sevilleTimeElement.innerHTML = sevilleTime.format("h:mm:ss [<small>]A[</small>]");
 
 }
 
@@ -63,7 +63,7 @@ function updateCity(event) {
        <h2>${cityName}</h2>
       <div class="details">
        <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
-     <div class="time">${cityTime.format("h:mm:ss ss")} <small>${cityTime.format("A")}</small></div>
+     <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
    </div>
    </div>`;
  }
